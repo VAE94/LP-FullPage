@@ -1,0 +1,123 @@
+#aboutSection {
+	.caption-wrapper {
+		display: flex;
+		@media (min-width: $md) {
+			gap: 50px;
+		}
+
+		.background-img {
+			display: none;
+			@media (min-width: $md) {
+				display: block;
+			}
+		}
+
+		.about-caption {
+			position: relative;
+			width: 150px;
+			margin-top: 60px;
+			@media (min-width: $md) {
+				width: 400px;
+			}
+			h2 {
+				font-family: $proxima;
+				font-weight: 900;
+				text-align: justify;
+				color: $white;
+				padding-bottom: 30px;
+				@media (min-width: $md) {
+					font-size: 5rem;
+					letter-spacing: 2px;
+				}
+			}
+			.shape-triangle {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				width: 10px;
+
+				@media (min-width: $md) {
+					width: 13px;
+				}
+			}
+			.shape-squar {
+				position: absolute;
+				width: 6px;
+				top: 66%;
+				bottom: 0;
+				left: 70%;
+				right: 0;
+
+				@media (min-width: $md) {
+					width: 8px;
+					top: 62%;
+					left: 68%;
+				}
+			}
+			.shape-round {
+				position: absolute;
+				width: 15px;
+				top: 17%;
+				bottom: 0;
+				left: 79%;
+				right: 0;
+				@media (min-width: $md) {
+					width: 30px;
+					top: 17.5%;
+					left: 80%;
+				}
+			}
+			.shape-rhomb {
+				position: absolute;
+				width: 12px;
+				top: 10%;
+				bottom: 0;
+				right: -30%;
+				@media (min-width: $md) {
+					width: 14px;
+					top: 15%;
+					right: -15%;
+				}
+			}
+			a {
+				font-family: $proxima;
+				font-size: 0.8rem;
+				font-weight: 700;
+				color: $white;
+				text-transform: uppercase;
+				@media (min-width: $md) {
+					font-size: 1rem;
+				}
+
+				i {
+					padding-left: 5px;
+				}
+			}
+		}
+	}
+	.about-wrapper {
+		display: none;
+		@media (min-width: $md) {
+			display: flex;
+			gap: 20px;
+		}
+
+		.about-content {
+			position: relative;
+			padding-bottom: 50px;
+			img {
+				border: 10px solid $dark-blue;
+			}
+			p {
+				font-family: $proxima;
+				font-weight: 600;
+				font-size: 0.8rem;
+				text-transform: uppercase;
+				color: $white;
+				position: absolute;
+				top: 57%;
+				left: 10%;
+			}
+		}
+	}
+}

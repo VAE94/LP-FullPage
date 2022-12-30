@@ -1,0 +1,140 @@
+#homeSection {
+	margin-top: 20px;
+
+	.caption-wrapper {
+		display: flex;
+		@media (min-width: $md) {
+			gap: 50px;
+		}
+		.home-caption {
+			width: 230px;
+			margin-top: 50px;
+			padding-bottom: 20px;
+			@media (min-width: $md) {
+				width: 360px;
+			}
+			h1 {
+				font-family: $proxima;
+				font-size: 2.5rem;
+				font-weight: 900;
+				padding-bottom: 32px;
+				color: $white;
+
+				@media (min-width: $md) {
+					font-size: 5rem;
+					line-height: 1;
+				}
+			}
+			a {
+				font-family: $proxima;
+				text-transform: uppercase;
+				color: $white;
+				span {
+					background-color: $dark-blue;
+					padding: 8px 10px 8px 0;
+					i {
+						padding: 8px;
+					}
+				}
+			}
+		}
+		img {
+			display: none;
+			@media (min-width: $md) {
+				display: block;
+			}
+		}
+	}
+	.home-wrapper {
+		display: block;
+		position: relative;
+		padding-top: 20px;
+
+		.move-content {
+			&::before {
+				content: '';
+				top: 0;
+				position: absolute;
+				background-color: $dark-blue;
+				width: 30px;
+				height: 5px;
+			}
+		}
+
+		@media (min-width: $md) {
+			display: flex;
+			gap: 60px;
+		}
+		.home-content {
+			@media (min-width: $md) {
+				width: 220px;
+			}
+
+			&.active {
+				color: $white;
+			}
+			h4 {
+				font-family: $proxima;
+				font-size: 1rem;
+				padding: 20px 0;
+			}
+			p {
+				font-family: $proxima;
+				font-size: 0.8rem;
+			}
+		}
+	}
+}
+
+#fp-nav ul li a.active span {
+	width: 6px;
+	height: 6px;
+	margin: -3px 0 0 -3px;
+	background-color: blue;
+}
+
+#fp-nav ul {
+	display: none;
+	@media (min-width: $md) {
+		position: relative;
+		height: 80vh;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		width: 2px;
+		height: 100%;
+		transform: translateX(-50%);
+		left: 50%;
+		background-color: $gray;
+		display: block;
+	}
+
+	li {
+		position: relative;
+		.fp-tooltip {
+			font-family: $proxima;
+			font-size: 0.7rem;
+		}
+		&::before {
+			background-color: $white;
+			content: '';
+			position: absolute;
+			width: 4px;
+			height: 4px;
+			bottom: -9vh;
+			border-radius: 50%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		&:last-of-type {
+			&::before {
+				display: none;
+			}
+		}
+	}
+}

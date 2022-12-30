@@ -1,0 +1,19 @@
+// External resources
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Core
+@import "variabiles";
+@import "mixins";
+@import "reset";
+@import "fonts";
+
+// App
+@import 'fullpage/home';
+@import 'fullpage/works';
+@import 'fullpage/body';
+@import 'fullpage/about';
+@import 'fullpage/contact';
+@import 'fullpage/hire';
+@import 'fullpage/header';
+
+

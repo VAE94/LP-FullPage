@@ -1,0 +1,129 @@
+#hireSection {
+	.hire-wrapper {
+		h3 {
+			font-family: $avenir;
+			text-align: center;
+			font-weight: 900;
+			padding: 20px;
+			color: $white;
+		}
+		.hire-us {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+
+			@media (min-width: $md) {
+				display: block;
+				padding-bottom: 50px;
+			}
+			button {
+				font-family: $avenir;
+				font-weight: 600;
+				font-size: 0.8rem;
+				position: relative;
+				margin: 5px;
+				width: 120px;
+				padding: 5px;
+				background-color: $black;
+				color: $white;
+				border: 2px solid $white;
+				i{
+					display: none;
+				}
+				&.active {
+					background-color: $blue;
+					border: none;
+					i{
+						display: inline-block;
+					}
+				}
+				
+
+
+				@media (min-width: $md) {
+					font-family: $avenir;
+					font-size: 1rem;
+					font-weight: 600;
+					position: relative;
+					left: 22%;
+					margin: 20px;
+					width: 150px;
+					padding: 5px;
+					background-color: $black;
+					color: $white;
+					border: 2px solid $white;
+				}
+			}
+
+			.design-buttons1 {
+				position: relative;
+				left: 20%;
+				@media (min-width: $md) {
+					left: 0;
+				}
+			}
+			.design-buttons2 {
+				@media (min-width: $md) {
+					position: relative;
+					left: 10%;
+				}
+
+				.marketing-button {
+					position: relative;
+					left: 0;
+					@media (min-width: $md) {
+						position: absolute;
+						left: 30%;
+						top: 80%;
+					}
+				}
+			}
+		}
+		.send-request {
+			display: flex;
+			justify-content: center;
+			gap: 10px;
+			padding-top: 20px;
+			@media (min-width: $md) {
+				gap: 50px;
+			}
+			input {
+				background-color: $black;
+				width: 180px;
+				color: $white;
+				border: none;
+				border-bottom: 1px solid $white;
+				padding: 5px 0;
+				@media (min-width: $md) {
+					width: 300px;
+				}
+				&::placeholder {
+					font-family: $avenir;
+					font-size: 1.2rem;
+					color: $white;
+				}
+			}
+		}
+
+		.send-button {
+			font-family: $avenir;
+			font-size: 0.8rem;
+			color: $white;
+			text-transform: uppercase;
+			padding: 5px;
+			position: relative;
+			top: 0;
+			left: 20%;
+			margin-top: 50px;
+			width: 250px;
+			background-color: $blue;
+			border: none;
+			@media (min-width: $md) {
+				left: 40%;
+			}
+		}
+	}
+}
+
+.fp-watermark {
+	display: none;
+}

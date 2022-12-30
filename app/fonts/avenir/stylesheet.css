@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Avenir';
+    src:url('/fonts/avenir/AvenirLTStd-Roman.woff2') format('woff2'),
+       url('/fonts/avenir/AvenirLTStd-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src:url('/fonts/avenir/AvenirLTStd-Book.woff2') format('woff2'),
+       url('/fonts/avenir/AvenirLTStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src:url('/fonts/avenir/AvenirLTStd-Black.woff2') format('woff2'),
+       url('/fonts/avenir/AvenirLTStd-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
